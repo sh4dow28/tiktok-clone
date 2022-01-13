@@ -115,32 +115,32 @@ class PageBody extends StatelessWidget {
   PageBody({Key? key}) : super(key: key);
   final List<Map> tryItems = [
     {
-      "video": "assets/videos/video_1.mp4",
+      "video": "videos/video_1.mp4",
       "title": "Title one",
     },
 
     {
-      "video": "assets/videos/video_2.mp4",
+      "video": "videos/video_2.mp4",
       "title": "Title two",
     },
 
     {
-      "video": "assets/videos/video_3.mp4",
+      "video": "videos/video_3.mp4",
       "title": "Title tree",
     },
 
     {
-      "video": "assets/videos/video_4.mp4",
+      "video": "videos/video_4.mp4",
       "title": "Title four",
     },
 
     {
-      "video": "assets/videos/video_5.mp4",
+      "video": "videos/video_5.mp4",
       "title": "Title five",
     },
 
     {
-      "video": "assets/videos/video_6.mp4",
+      "video": "videos/video_6.mp4",
       "title": "Title six",
     }
   ];
@@ -160,10 +160,10 @@ class PageBody extends StatelessWidget {
                 color: Colors.blueGrey[700],
                 child: Stack(
                   children: [
-                    // PostVideo(PostVideoPath: item['video'],),
-                    Container(
-                      child: Center(child: Image.asset('assets/images/img_test.jpg')),
-                    ),
+                    PostVideo(PostVideoPath: item['video'],),
+                    // Container(
+                    //   child: Center(child: Image.asset('images/img_test.jpg')),
+                    // ),
                     PostInfo(),
                   ],
                 )
